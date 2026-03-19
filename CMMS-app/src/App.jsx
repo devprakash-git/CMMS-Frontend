@@ -3,6 +3,8 @@ import AuthPage from './pages/AuthPage';
 import HomePage from './pages/HomePage';
 import FirstPage from './pages/FirstPage';
 import DailyMenu from './pages/DailyMenu';
+import ComplaintPage from "./pages/ComplaintPage";
+
 
 function App() {
   return (
@@ -27,3 +29,4 @@ function App() {
 }
 
 export default App;
+
