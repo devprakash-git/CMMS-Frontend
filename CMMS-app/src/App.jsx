@@ -1,9 +1,6 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AuthPage from './pages/AuthPage';
 import HomePage from './pages/HomePage';
-import DailyMenu from './pages/DailyMenu';
-import ExtrasPage from './pages/ExtrasPage';
 import FirstPage from './pages/FirstPage';
 import DailyMenu from './pages/DailyMenu';
 import ComplaintPage from "./pages/ComplaintPage";
@@ -35,22 +32,22 @@ function App() {
 
         {/* Public Routes */}
         <Route path="/" element={<Navigate to="/home" replace />} />
-
-        {/* This is the CMMS Login/Landing page your teammate built */}
         <Route path="/home" element={<HomePage />} />
 
-        {/* Daily Mess Menu Page */}
-        <Route path="/menu" element={<DailyMenu />} />
-        
-        {/* Your Completed Extras Page */}
-        <Route path="/extras" element={<ExtrasPage />} />
-
-        <Route path="/billing" element={<BillingPage />} />
-        
+        {/* Placeholder for future dashboard */}
+        <Route path="/dashboard" element={
+          <div className='flex justify-center items-center h-screen bg-gray-900 text-white'>
+            <h1 className='text-3xl font-bold'>Welcome to Dashboard!</h1>
+          </div>
+        } />
       </Routes>
     </Router>
   );
 }
+
+export default App;
+
+
 
 export default App;
 
