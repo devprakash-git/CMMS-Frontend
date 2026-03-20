@@ -5,6 +5,8 @@ import FirstPage from './pages/FirstPage';
 import DailyMenu from './pages/DailyMenu';
 import ComplaintPage from "./pages/ComplaintPage";
 import ProtectedRoute from './components/auth/ProtectedRoute';
+import ExtrasPage from './pages/ExtrasPage';
+import RebatePage from './pages/RebatePage';
 
 
 function App() {
@@ -30,6 +32,18 @@ function App() {
           </ProtectedRoute>
         } />
 
+        <Route path='/extras' element={
+          <ProtectedRoute>
+            <ExtrasPage/>
+          </ProtectedRoute>
+        }/>
+
+        <Route path='/rebate' element={
+          <ProtectedRoute>
+            <RebatePage/>
+          </ProtectedRoute>
+        }/>
+
         {/* Public Routes */}
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<HomePage />} />
@@ -48,6 +62,4 @@ function App() {
 export default App;
 
 
-
-export default App;
 

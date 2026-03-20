@@ -1,5 +1,5 @@
 import { useState } from "react";
-import RebateForm from "../components/RebateForm";
+import RebateForm from '../components/RebatePage/RebateForm';
 
 export default function RebatePage() {
   const [activePage, setActivePage] = useState("dashboard");
