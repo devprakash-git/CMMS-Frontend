@@ -8,7 +8,11 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import ExtrasPage from './pages/ExtrasPage';
 import RebatePage from './pages/RebatePage';
 import BillingPage from './pages/BillingPage'
-
+import AdminFeedbackPage from './pages/AdminFeedbackPage';
+import AdminExtrasManagement from './pages/AdminExtrasManagement';
+import AdminBillingPage from './pages/AdminBillingPage';
+import AdminMenuManagement from './pages/AdminMenuManagement';
+import AdminRebatePage from './pages/AdminRebatePage';
 
 function App() {
   return (
