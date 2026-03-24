@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/login" element={<AuthPage />} />
-        
+
         {/* Protected Routes */}
         <Route path="/first" element={
           <ProtectedRoute>
@@ -35,22 +35,46 @@ function App() {
 
         <Route path='/extras' element={
           <ProtectedRoute>
-            <ExtrasPage/>
+            <ExtrasPage />
           </ProtectedRoute>
-        }/>
+        } />
 
         <Route path='/rebate' element={
           <ProtectedRoute>
-            <RebatePage/>
+            <RebatePage />
           </ProtectedRoute>
-        }/>
+        } />
 
         <Route path='/billing' element={
           <ProtectedRoute>
-            <BillingPage/>
+            <BillingPage />
           </ProtectedRoute>
-        }/>
-
+        } />
+        <Route path="/admin-feedback" element={
+          <ProtectedRoute>
+            <AdminFeedbackPage />
+          </ProtectedRoute>
+        } />
+        <Route path="/admin-extras" element={
+          <ProtectedRoute>
+            <AdminExtrasManagement />
+          </ProtectedRoute>
+        } />
+        <Route path="/admin-billing" element={
+          <ProtectedRoute>
+            <AdminBillingPage />
+          </ProtectedRoute>
+        } />
+        <Route path="/admin-menu" element={
+          <ProtectedRoute>
+            <AdminMenuManagement />
+          </ProtectedRoute>
+        } />
+        <Route path="/admin-rebate" element={
+          <ProtectedRoute>
+            <AdminRebatePage />
+          </ProtectedRoute>
+        } />
         {/* Public Routes */}
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<HomePage />} />
